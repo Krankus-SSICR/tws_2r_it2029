@@ -1,0 +1,20 @@
+body {
+    background: beige;
+    margin: 100px 100px 10000px 100px;
+    font-family: Tahoma;
+}
+.parent {
+    margin: 80px;
+    background: aquamarine;
+    border: 3px solid black;
+    width: 1000px;
+    height: 387px;
+    display: flex;
+}
+.child {
+    background: hotpink;
+    width: 100px;
+    height: 60px;
+    font-size: 32px;
+    font-weight: bold;
+}
