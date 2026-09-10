@@ -10,11 +10,14 @@ body {
     width: 1000px;
     height: 387px;
     display: flex;
+    flex-wrap: wrap;
 }
 .child {
     background: hotpink;
     width: 100px;
-    height: 60px;
     font-size: 32px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
