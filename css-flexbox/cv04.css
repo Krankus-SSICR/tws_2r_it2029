@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: navy;
+    color: azure;
+}
+.container {
+    width: 83%;
+    margin: 3em auto;
+}
+.fotogalerie {
+    border: 0.3em crimson solid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    padding: 3em 0;
+}
+.foto {
+    border: 0.3em yellow solid;
+    width: 20%;
+}
+.foto img {
+    width: 100%;
+}
+.texty {
+    padding: 1em;
+}
+.foto a {
+    color: azure;
+    text-decoration: none;
+}
