@@ -1,0 +1,53 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 75%;
+    margin: 2em auto;
+}
+.studenti {
+    display: flex;
+    gap: 1em;
+}
+.student {
+    padding: 2em;
+    background: aquamarine;
+    border-radius: 15px;
+    flex-basis: 200px;
+    text-align: center;
+}
+.tlacitko {
+    padding: 15px;
+    background: salmon;
+    position: fixed;
+    right: 0;
+    top: 150px;
+}
+
+
+
+/* rozvržení pro mobil */
+
+/* rozvržení pro tablet */
+@media (max-width: 1024px) {
+    .student {
+        background: blue;
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        width: 90%;
+    }
+    .studenti {
+        flex-direction: column;
+    }
+    .student {
+        background: crimson;
+    }
+    .tlacitko {
+        display: none;
+    }
+}
