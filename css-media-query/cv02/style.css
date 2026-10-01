@@ -1,0 +1,56 @@
+body {
+    font-family: "Luckiest Guy", cursive;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: lightskyblue;
+    padding-top: 3em;
+}
+.logo {
+    width: 15%;
+    margin: 0 auto;
+}
+.logo img {
+    width: 100%;
+}
+nav ul {
+    margin: 0;
+    padding: 1.5em 0;
+    list-style: none;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    gap: 2em;
+}
+nav a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 430px) {
+    header {
+        padding-top: 1em;
+    }
+    .logo {
+        display: none;
+    }
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        font-size: 1.1em;
+    }
+}
