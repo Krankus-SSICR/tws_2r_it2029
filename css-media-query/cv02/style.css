@@ -28,6 +28,25 @@ nav a {
     text-decoration: none;
     font-size: 1.3em;
 }
+main {
+    padding: 3em 16%;
+    background: lightgoldenrodyellow;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.gallery-item {
+    width: 22%;
+    background: white;
+}
+.img img {
+    width: 100%;
+}
+.text {
+    padding: 1em;
+}
 
 
 
@@ -52,5 +71,11 @@ nav a {
     }
     nav a {
         font-size: 1.1em;
+    }
+    main {
+        padding: 1em 5%;
+    }
+    .gallery-item {
+        width: 100%;
     }
 }
