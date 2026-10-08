@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Tahoma;
+}
+nav {
+    background: #8B0000;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+nav ul {
+    margin: 0;
+    padding: 2em;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF8DC;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+nav ul li a:hover {
+    border-bottom: 3px solid #FFF8DC;
+}
+.container {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+section {
+    padding: 4em;
+}
+#polevky {
+    background: #FFD700;
+}
+#hlavni-jidla {
+    background: #8B4513;
+    color: #FFF8DC;
+}
+#dezerty {
+    background: #556B2F;
+    color: #FFF8DC;
+}
+#fotogalerie {
+    background: #FFF8DC;
+}
+h2 {
+    font-size: 28px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.fotogalerie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.foto {
+    border: 2px solid black;
+    padding: 1em;
+    flex-basis: 300px;
+    text-align: center;
+}
+.foto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
