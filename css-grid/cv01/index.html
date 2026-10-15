@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - grid</title>
+        <style>
+        .parent {
+            background: skyblue;
+            padding: 10px;
+            width: 50%;
+            /* pro zobrazování v režimu grid používáme display: grid; */
+            display: grid;
+            /* nastavíme počet sloupců, který chceme */
+            /* grid-template-columns: auto auto auto; */
+            /* zkrácený zápis pro počet sloupců */
+            grid-template-columns: repeat(4, auto);
+        }
+        .child {
+            background: #ccc;
+            border: 2px solid #000;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .parent2 {
+            background: skyblue;
+            padding: 10px;
+            margin-top: 50px;
+
+            display: grid;
+            /* nastavíme, aby první sloupec byl dva framy (2fr) a druhý 1fr */
+            grid-template-columns: 2fr 1fr;
+            /* rozestupy nastavujeme pomocí gap */
+            gap: 5px;
+        }
+        .parent3 {
+            background: skyblue;
+            padding: 10px;
+            /* pokud chceme, aby se grid přizpůsobil obsahu používáme display: inline-grid; */
+            display: inline-grid;
+            grid-template-columns: repeat(3, auto);
+        }
+        .parent4 {
+            background: skyblue;
+            padding: 10px;
+            display: grid;
+            /* pro úpravu řádku používáme grid-template-rows */
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: 80px 200px;
+        }
+
+
+
+
+
+
+        @media (max-width: 1000px) {
+            .parent2 {
+                grid-template-columns: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Rozvržení pomocí grid</h2>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+    <div class="parent2">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+
+    <h2>Inline grid</h2>
+    <div class="parent3">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+
+    <h2>Úprava výšky řádku pomocí grid</h2>
+    <div class="parent4">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+</body>
+</html>
