@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Rozvržení stránky</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, [col-start] 1fr);
+            gap: 1em;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .container div {
+            background: lightblue;
+            border: 2px solid navy;
+            /* grid-column: col-start / span 12; */
+        }
+        .nav, header, footer {
+            background: lightblue;
+            border: 2px solid navy;
+            padding: 0.5em;
+            grid-column: col-start / span 12;
+        }
+        .nav {
+            grid-column: col-start / span 2;
+        }
+        .content {
+            grid-column: col-start 3 / span 8;
+        }
+        .panel, .reklamy {
+            grid-column: col-start 11 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="head">Logo stránky</header>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Odkaz navigace 1</a></li>
+                <li><a href="#">Odkaz navigace 2</a></li>
+                <li><a href="#">Odkaz navigace 3</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Obsahová část stránky</h1>
+            <p>odstavec 1</p>
+            <p>odstavec 2</p>
+            <p>odstavec 3</p>
+        </div>
+        <div class="panel">Postranní panel</div>
+        <div class="reklamy">Reklamy</div>
+        <footer>IT2029</footer>
+    </div>
+</body>
+</html>
