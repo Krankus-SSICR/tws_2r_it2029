@@ -7,6 +7,7 @@ body {
     font-family: Arial;
     margin: 20px;
     background: #f4f4f4;
+    margin-bottom: 1000px;
 }
 
 section {
@@ -14,7 +15,7 @@ section {
 }
 
 /* společný vzhled částí */
-.sloupec, .box {
+.sloupec, .box, .stranka > * {
     color: white;
     font-weight: bold;
     padding: 20px 5px;
@@ -46,4 +47,50 @@ section {
 .span-6 {
     grid-column: span 6;
     background: mediumpurple;
+}
+.span-4 {
+    grid-column: span 4;
+}
+/* Zarovnání podle čar gridu */
+.cara-1 {
+    grid-column: 1/5;
+    background: tomato;
+}
+.cara-2 {
+    grid-column: 5/13;
+    background: steelblue;
+}
+.cara-3 {
+    grid-column: 3/11;
+    background: orange;
+}
+
+/* 4. rozvržení stránky */
+.stranka {
+    /* nastavíme výšku řádků */
+    grid-template-rows: 100px 50px 300px 80px;
+}
+.hlavicka {
+    grid-column: 1/-1;
+    background: tomato;
+}
+.menu {
+    grid-column: 1/-1;
+    background: steelblue;
+}
+.levy-panel {
+    grid-column: span 2;
+    background: orange;
+}
+.obsah {
+    grid-column: span 8;
+    background: seagreen;
+}
+.pravy-panel {
+    grid-column: span 2;
+    background-color: orange;
+}
+.paticka {
+    grid-column: 1/-1;
+    background: hotpink;
 }
