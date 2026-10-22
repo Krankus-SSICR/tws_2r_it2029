@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID - 12 sloupců</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Grid se 12 sloupci</h1>
+
+    <section>
+        <h2>1. Mřížka 12 sloupců</h2>
+        <div class="grid">
+            <div class="sloupec">1</div>
+            <div class="sloupec">2</div>
+            <div class="sloupec">3</div>
+            <div class="sloupec">4</div>
+            <div class="sloupec">5</div>
+            <div class="sloupec">6</div>
+            <div class="sloupec">7</div>
+            <div class="sloupec">8</div>
+            <div class="sloupec">9</div>
+            <div class="sloupec">10</div>
+            <div class="sloupec">11</div>
+            <div class="sloupec">12</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Roztažení přes sloupce pomocí span</h2>
+        <div class="grid">
+            <!-- jedna buňka přes 12 sloupců -->
+            <div class="box span-12">span 12</div>
+            <!-- 6 + 6 -->
+            <div class="box span-6">span 6</div>
+            <div class="box span-6">span 6</div>
+        </div>
+    </section>
+</body>
+
+</html>
