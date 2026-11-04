@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV03 – Skateboarding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Celá stránka je jeden velký grid se 12 sloupci (jako v cv02) -->
+    <div class="stranka">
+
+        <!-- HLAVIČKA: logo + menu -->
+        <header class="hlavicka">
+            <div class="logo">SK8 ZONE</div>
+            <nav class="menu">
+                <a href="#">Domů</a>
+                <a href="#">Historie</a>
+                <a href="#">Triky</a>
+                <a href="#">Skateparky</a>
+                <a href="#">Galerie</a>
+            </nav>
+        </header>
+
+        <!-- ÚVODNÍ BANNER přes celou šířku -->
+        <section class="banner">
+            <div class="banner-text">
+                <h1>Skateboarding</h1>
+                <p>Prkno, čtyři kolečka a ulice plná překážek.</p>
+            </div>
+        </section>
+
+        <!-- HLAVNÍ OBSAH -->
+        <main class="obsah">
+
+            <article>
+                <h2>Historie</h2>
+                <p>
+                    Skateboarding vznikl v Kalifornii na přelomu 40. a 50. let. Surfaři chtěli
+                    jezdit i ve dnech, kdy nebyly vlny, a tak připevnili kolečka na prkno –
+                    proto se mu zpočátku říkalo „sidewalk surfing“.
+                </p>
+                <p>
+                    Velký zlom přišel v 70. letech s polyuretanovými kolečky, která jsou tichá
+                    a dobře drží na povrchu. Od olympijských her v Tokiu je skateboarding
+                    i olympijským sportem.
+                </p>
+            </article>
+
+            <!-- Karty se styly jízdy – vnořený grid se 3 sloupci -->
+            <article>
+                <h2>Styly jízdy</h2>
+                <div class="karty">
+                    <div class="karta">
+                        <img class="foto" src="img/street.jpg" alt="Skateboardista skáče ollie přes schody">
+                        <h3>Street</h3>
+                        <p>Jízda po městě – schody, zábradlí, obrubníky a lavičky.</p>
+                    </div>
+                    <div class="karta">
+                        <img class="foto" src="img/park.jpg" alt="Skateboardista ve vzduchu nad rampou, v pozadí Space Needle">
+                        <h3>Park</h3>
+                        <p>Ve skateparku na rampách, bowlech a překážkách.</p>
+                    </div>
+                    <div class="karta">
+                        <img class="foto" src="img/longboard.jpg" alt="Longboardisté jedou po silnici z kopce">
+                        <h3>Longboard</h3>
+                        <p>Delší prkno na cestování a jízdu z kopce.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Seznam triků – grid s automatickými řádky -->
+            <article>
+                <h2>Základní triky</h2>
+                <div class="triky">
+                    <div class="trik">Ollie</div>
+                    <div class="trik">Kickflip</div>
+                    <div class="trik">Heelflip</div>
+                    <div class="trik">Pop Shove-it</div>
+                    <div class="trik">Manual</div>
+                    <div class="trik">50-50 Grind</div>
+                    <div class="trik">Boardslide</div>
+                    <div class="trik">Drop in</div>
+                </div>
+            </article>
+
+        </main>
+
+        <!-- BOČNÍ PANEL -->
+        <aside class="panel">
+            <div class="blok">
+                <h3>Výbava</h3>
+                <ul>
+                    <li>Deska (deck)</li>
+                    <li>Trucky</li>
+                    <li>Kolečka a ložiska</li>
+                    <li>Grip</li>
+                    <li>Helma a chrániče</li>
+                </ul>
+            </div>
+            <div class="blok">
+                <h3>Tip pro začátečníky</h3>
+                <p>
+                    Nejdřív se nauč jezdit, brzdit a otáčet se.
+                    Triky přijdou až potom.
+                </p>
+            </div>
+        </aside>
+
+        <!-- GALERIE – grid se 4 sloupci, jedna fotka je větší -->
+        <section class="galerie">
+            <h2>Galerie</h2>
+            <div class="galerie-mrizka">
+                <img class="foto foto-velka" src="img/galerie-1.jpg" alt="Varial kickflip">
+                <img class="foto" src="img/galerie-2.jpg" alt="Skok přes sloupek">
+                <img class="foto" src="img/galerie-3.jpg" alt="Kickflip fakie">
+                <img class="foto" src="img/galerie-4.jpg" alt="Grind po zábradlí na závodech">
+                <img class="foto" src="img/galerie-5.jpg" alt="Skatepark v Ružomberku">
+                <img class="foto" src="img/galerie-6.jpg" alt="Kickflip ze schodů">
+                <img class="foto" src="img/galerie-7.jpg" alt="Skatepark ve Stromovce v Českých Budějovicích">
+            </div>
+        </section>
+
+        <!-- ZDROJE FOTEK – licence CC vyžadují uvést autora -->
+        <section class="zdroje">
+            <h3>Zdroje fotografií (Wikimedia Commons)</h3>
+            <ul>
+                <li>Banner: Troy Sankey, CC BY-SA 4.0</li>
+                <li>Street: ellisd, CC BY 2.0</li>
+                <li>Park: Joe Mabel, CC BY-SA 3.0</li>
+                <li>Longboard: Thayne Tuason, CC BY 4.0</li>
+                <li>Galerie 1: Oliver Herz, CC BY 3.0</li>
+                <li>Galerie 2: M M from Switzerland, CC BY-SA 2.0</li>
+                <li>Galerie 3: Romke Hoogwaerts, CC BY 2.0</li>
+                <li>Galerie 4: Wil540 art, CC BY-SA 4.0</li>
+                <li>Galerie 5: Oto Zapletal, CC BY 4.0</li>
+                <li>Galerie 6: Telanjanggmail, CC BY-SA 3.0</li>
+                <li>Galerie 7: Czeva, CC BY-SA 4.0</li>
+            </ul>
+        </section>
+
+        <!-- PATIČKA -->
+        <footer class="paticka">
+            <div>SK8 ZONE</div>
+            <div>Vytvořeno ve výuce TWS – CSS Grid</div>
+            <div>&copy; 2026</div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* základní nastavení pro grid */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.5em;
+}
+
+/* hlavní grid stránky - 12 sloupců */
+.stranka {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* hlavička stránky */
+.hlavicka {
+    /* celá šířka */
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    background: #222;
+    padding: 15px 20px;
+}
+
+/* textové logo */
+.logo {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* odkazy v navigaci */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+}
+.menu a:hover {
+    color: orange;
+}
+
+/* úprava hlavního banneru */
+.banner {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px;
+    align-items: center;
+    background-image: url(img/banner.jpg);
+    /* vyplnění celého rámečku */
+    background-size: cover;
+    background-position: center;
+}
+.banner-text {
+    grid-column: 3/11;
+    color: white;
+}
