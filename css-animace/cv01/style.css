@@ -1,0 +1,108 @@
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: system-ui, sans-serif;
+    color: #1e293b;
+    background: #f1f5f9;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 3px solid royalblue;
+}
+
+h3 {
+    margin: 0 0 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    padding: 16px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.box {
+    width: 70px;
+    height: 70px;
+    background-color: royalblue;
+}
+
+
+/* použití transition, při změně stavu prvku (hover) */
+
+.t-color:hover {
+    background: orange;
+}
+.t-color {
+    transition: background 0.5s;
+}
+.t-size:hover {
+    transform: scale(1.5);
+}
+.t-size {
+    transition: transform 0.5s;
+}
+.t-rotate:hover {
+    transform: rotate(180deg);
+}
+.t-rotate {
+    transition: transform 2s;
+}
+.t-move:hover {
+    transform: translateY(-100px);
+}
+.t-move {
+    transition: transform 0.5s;
+}
+
+
+
+
+/* použití animace pomocí keyframes a animation */
+
+@keyframes barva {
+    0% {background: royalblue;}
+    50% {background: orange;}
+    100% {background: royalblue;}
+}
+
+.a-color {
+    animation: barva 0.1s infinite;
+}
+
+@keyframes velikost {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
+.a-size {
+    animation: velikost 2s infinite;
+}
+
+@keyframes otoceni {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.a-rotate {
+    animation: otoceni 2s infinite;
+}
+
