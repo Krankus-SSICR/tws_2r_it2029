@@ -71,6 +71,18 @@ h3 {
 .t-move {
     transition: transform 0.5s;
 }
+.t-opacity:hover {
+    opacity: 0.1;
+}
+.t-opacity {
+    transition: opacity 1s;
+}
+.t-radius:hover {
+    border-radius: 50%;
+}
+.t-radius {
+    transition: border-radius 1.2s;
+}
 
 
 
@@ -106,3 +118,32 @@ h3 {
     animation: otoceni 2s infinite;
 }
 
+@keyframes posun {
+    0% {transform: translateX(0);}
+    33% {transform: translateX(-30px);}
+    66% {transform: translateY(30px);}
+    100% {transform: translateX(0);}
+}
+.a-move {
+    animation: posun 2s infinite;
+}
+
+@keyframes pruhlednost {
+    0% {opacity: 1;}
+    50% {opacity: 0.1;}
+    100% {opacity: 1;}
+}
+
+.a-opacity {
+    animation: pruhlednost 1s infinite;
+}
+
+@keyframes zaobleni {
+    0% {border-radius: 0;}
+    50% {border-radius: 50%;}
+    100% {border-radius: 0;}
+}
+
+.a-radius {
+    animation: zaobleni 1s infinite;
+}

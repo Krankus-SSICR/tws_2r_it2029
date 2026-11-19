@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktické přechody a animace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Praktické přechody a animace</h1>
+
+<h2>1. Přechody – transition</h2>
+
+<div class="grid">
+    <div class="card">
+        <h3>Tlačítka</h3>
+        <div class="demo demo-col">
+            <button class="btn btn-lift">Nadzvednutí</button>
+            <button class="btn btn-fill">Výplň zleva</button>
+            <button class="btn btn-press">Zmáčknutí</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Podtržení v menu</h3>
+        <div class="demo">
+            <nav class="menu">
+                <a href="#">Domů</a>
+                <a href="#">Služby</a>
+                <a href="#">Kontakt</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Rozbalovací menu</h3>
+        <div class="demo demo-top">
+            <div class="dropdown">
+                <button class="dropdown-btn">Menu ▾</button>
+                <ul class="dropdown-list">
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Nastavení</a></li>
+                    <li><a href="#">Odhlásit</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Karta s popiskem</h3>
+        <div class="demo">
+            <div class="zoom-card">
+                <div class="zoom-img"></div>
+                <div class="zoom-caption">Popisek obrázku</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Otočení karty</h3>
+        <div class="demo">
+            <div class="flip">
+                <div class="flip-inner">
+                    <div class="flip-front">Přední strana</div>
+                    <div class="flip-back">Zadní strana</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Přepínač</h3>
+        <div class="demo">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<h2>2. Animace – @keyframes</h2>
+
+<div class="grid">
+    <div class="card">
+        <h3>Načítání – kolečko</h3>
+        <div class="demo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Načítání – tečky</h3>
+        <div class="demo">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Psací stroj</h3>
+        <div class="demo">
+            <p class="typing">Ahoj, vítej na webu!</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Notifikace</h3>
+        <div class="demo">
+            <div class="notify">
+                🔔
+                <span class="badge">3</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Skeleton – načítání obsahu</h3>
+        <div class="demo">
+            <div class="skeleton">
+                <div class="sk-avatar"></div>
+                <div class="sk-lines">
+                    <div class="sk-line"></div>
+                    <div class="sk-line"></div>
+                    <div class="sk-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Progress bar</h3>
+        <div class="demo">
+            <div class="progress">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
