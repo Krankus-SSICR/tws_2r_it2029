@@ -312,3 +312,29 @@ h3 {
 .btn-press {
     transition: transform 0.2s;
 }
+.menu a::after {
+    transform: scaleX(0);
+    transition: transform 0.5s;
+    content: "";
+    display: block;
+    height: 3px;
+    background: royalblue;
+}
+.menu a:hover::after {
+    transform: scaleX(1);
+}
+.dropdown:hover .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.dropdown-list a:hover {
+    background: royalblue;
+    transition: background 0.5s;
+}
+.zoom-card:hover .zoom-caption {
+    transform: translateY(0);
+}
+.zoom-card:hover .zoom-img  {
+    transform: scale(1.15);
+}
